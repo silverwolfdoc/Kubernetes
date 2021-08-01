@@ -8,3 +8,6 @@ spec:
   containers:
   - name: demo-container
     image: nginx
+    imagePullPolicy: IfNotPresent
+  nodeSelector:
+    kubernetes.io/arch: arm64
